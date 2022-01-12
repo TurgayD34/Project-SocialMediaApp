@@ -1,0 +1,43 @@
+.img-container{
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    img{
+        width: 400px;
+        height: 320px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #333;
+    }
+    .icons{
+        border: none;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .likebtn, .dislikebtn{
+            display: flex;
+            justify-content: center;
+            
+            .fas{
+                font-size: 2rem;
+                color:#333;
+                padding: 0 15px;
+                cursor: pointer;
+                &:active{
+                    color: #004eff;
+                    transform: scale(1.2);
+                }
+            }
+            input{
+                width: 50px;
+                border: none;
+                background: none;
+                color: #919191;
+                font-size: 20px;
+                pointer-events: none;
+            }
+        }
+    }
+}
